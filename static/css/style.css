@@ -143,11 +143,11 @@ table, th, td { /* Таблица */
   }
   nav a {
     margin: 0 2vw;
-    font-size: 4.5vw;
+    font-size: 5vw;
   }
   .logo a {
     margin: 0 1vw;
-    font-size: 5vw;
+    font-size: 7vw;
   }
   main {
     padding: 10px;
