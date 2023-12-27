@@ -123,6 +123,9 @@ p, li, td {
 .content { /* Вътрешната част на кутиите */
   margin-top: 20px;
 }
+.lesson-img { /* Снимките вътре в уроците */
+  width: 400px;
+}
 #contentLit, #contentBulg, #contentMat { /* Скрива съдържанието във всеки урок, докато се избере това, което ни трябва, за по-гладко зареждане */
   visibility: hidden;
 }
@@ -151,6 +154,9 @@ table, th, td { /* Таблица */
   }
   main {
     padding: 10px;
+  }
+  .lesson-img {
+    width: 250px;
   }
   footer {
     background-color: #1a232f;
