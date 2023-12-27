@@ -75,6 +75,18 @@ main { /* Основна част */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+button { /* Бутоните в задачите след всеки урок */
+  background-color: #456abb;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
 .subject-content { /* Отделна част, "кутия" */
   margin-top: 20px;
   position: relative;
@@ -86,14 +98,14 @@ main { /* Основна част */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .subject-section-title { /* "Кутия" вид 2 */
- margin-top: 20px;
- position: relative;
- text-align: left;
- background: #212e3b;
- padding: 5px;
- padding-left: 40px;
- border-radius: 10px;
- box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  position: relative;
+  text-align: left;
+  background: #212e3b;
+  padding: 5px;
+  padding-left: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 main a {
   text-decoration: none;
@@ -101,6 +113,9 @@ main a {
 }
 .pointer-cursor:hover { /* Бутоните за уроците да действат като линкове */
   cursor: pointer;
+}
+.gradetext { /* Текстът, който показва оценката, която ученикът е получил при задачите. Изчислява се по формулата: 2+4*(верни/3) */
+  visibility: hidden;
 }
 /* Размери на текст за съвместимост */
 p, li {
