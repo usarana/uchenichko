@@ -11,4 +11,5 @@ function resolve(contentId) {
     loc += "?id=" + contentId.slice(1);
     // Отваряне
     window.location.href = loc;
+    // Готови сме!
 }

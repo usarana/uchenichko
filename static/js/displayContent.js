@@ -33,4 +33,5 @@ function display(subject) {
             ]
         }
     );
+    // Готови сме!
 }
