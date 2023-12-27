@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../static/css/style.css">
   <script src="../static/js/displayContent.js"></script>
+  <script src="../static/js/quiz.js"></script>
   <title>Ученичко - Български език</title>
 </head>
 <body onload="display('b')">
@@ -67,16 +68,23 @@
           <p>
             <br>
             <strong>1.</strong> Кои термини се отнасят за предмета география?<br>
-            а) израз, питагорова теорема, координатна система<br>
-            б) полезни изкопаеми, географска ширина, политическа карта<br>
-            в) йони, черен дроб, клетка<br>
-            г) архиепископ, княз, варвари<br>
-            <br>
+            <button type="button" id="b1q1a" onclick="quiz(this.id)">израз, питагорова теорема, координатна система</button>
+            <button type="button" id="b1q1b" onclick="quiz(this.id)">полезни изкопаеми, географска ширина, политическа карта</button>
+            <button type="button" id="b1q1c" onclick="quiz(this.id)">йони, черен дроб, клетка</button>
+            <button type="button" id="b1q1d" onclick="quiz(this.id)">архиепископ, княз, варвари</button><br><br>
             <strong>2.</strong> Какво е аргумент?<br>
-            а) ключова дума<br>
-            б) твърдение, което се доказва в научният текст<br>
-            в) доказателство, което се използва за потвърждаване на тезата<br>
-            г) заключение<br>
+            <button type="button" id="b1q2a" onclick="quiz(this.id)">ключова дума</button>
+            <button type="button" id="b1q2b" onclick="quiz(this.id)">твърдение, което се доказва в научният текст</button>
+            <button type="button" id="b1q2c" onclick="quiz(this.id)">доказателство, което се използва за потвърждаване на тезата</button>
+            <button type="button" id="b1q2d" onclick="quiz(this.id)">заключение</button><br><br>
+            <strong>3.</strong> Какви изречения се използват при научните текстове?<br>
+            <button type="button" id="b1q3a" onclick="quiz(this.id)">прости съобщителни</button>
+            <button type="button" id="b1q3b" onclick="quiz(this.id)">прости въпросителни</button>
+            <button type="button" id="b1q3c" onclick="quiz(this.id)">сложни съобщителни</button>
+            <button type="button" id="b1q3d" onclick="quiz(this.id)">прости възклицателни</button><br><br>
+
+            <button type="button" id="b1g" onclick="quizDone(this.id)">Готово</button><br>
+            <div id="b1t" class="gradetext"></div>
           </p>
         </div>
       </div>
@@ -145,22 +153,24 @@
           <h2>Задачи</h2>
           <p>
             <strong>1.</strong> На кой ред всички думи съдържат променливо Я?<br>
-            а) поляна, място, сянка<br>
-            б) вятър, дял, ябълка<br>
-            в) пясък, сняг, дявол<br>
-            г) пряспа, цялост, цвят<br>
+            <button type="button" id="b3q1a" onclick="quiz(this.id)">поляна, място, сянка</button>
+            <button type="button" id="b3q1b" onclick="quiz(this.id)">вятър, дял, ябълка</button>
+            <button type="button" id="b3q1c" onclick="quiz(this.id)">пясък, сняг, дявол</button>
+            <button type="button" id="b3q1d" onclick="quiz(this.id)">пряспа, цялост, цвят</button><br><br>
             <br>
             <strong>2.</strong> На кой ред думата е написана правилно?<br>
-            а) стояли<br>
-            б) спяли<br>
-            в) голями<br>
-            г) седяли<br>
+            <button type="button" id="b3q2a" onclick="quiz(this.id)">стояли</button>
+            <button type="button" id="b3q2b" onclick="quiz(this.id)">спяли</button>
+            <button type="button" id="b3q2c" onclick="quiz(this.id)">голями</button>
+            <button type="button" id="b3q2d" onclick="quiz(this.id)">седяли</button><br><br>
             <br>
             <strong>3.</strong> На кой ред има дума, в която е допусната грешка?<br>
-            а) живяли<br>
-            б) вървели<br>
-            в) запяла<br>
-            г) успели<br>
+            <button type="button" id="b3q3a" onclick="quiz(this.id)">живяли</button>
+            <button type="button" id="b3q3b" onclick="quiz(this.id)">вървели</button>
+            <button type="button" id="b3q3c" onclick="quiz(this.id)">запяла</button>
+            <button type="button" id="b3q3d" onclick="quiz(this.id)">успели</button><br><br>
+            <button type="button" id="b3g" onclick="quizDone(this.id)">Готово</button><br>
+            <div id="b3t" class="gradetext"></div>
           </p>
         </div>
       </div>
@@ -225,22 +235,24 @@
           <h2>Задачи</h2>
           <p>
             <strong>1.</strong> Къде е употребено показателно местоимение?<br>
-            а) Техните въпроси са напълно основателни.<br>
-            б) Зададоха им напълно основателни въпроси.<br>
-            в) Тези въпроси са напълно основателни.<br>
-            г) Зададоха напълно основателни въпроси към тях.<br>
+            <button type="button" id="b4q1a" onclick="quiz(this.id)">Техните въпроси са напълно основателни.</button>
+            <button type="button" id="b4q1b" onclick="quiz(this.id)">Зададоха им напълно основателни въпроси.</button>
+            <button type="button" id="b4q1c" onclick="quiz(this.id)">Тези въпроси са напълно основателни.</button>
+            <button type="button" id="b4q1d" onclick="quiz(this.id)">Зададоха напълно основателни въпроси към тях.</button><br><br>
             <br>
-            <strong>2.</strong> Къде е употребено показателно местоиимение за признаци?<br>
-            а) Ще има толкова много изненади!<br>
-            б) Не сме очаквали такива изненади.<br>
-            в) Тези изненади бяха неочаквани.<br>
-            г) Това беше голяма изненада за нас.<br>
+            <strong>2.</strong> Къде е употребено показателно местоимение за признаци?<br>
+            <button type="button" id="b4q2a" onclick="quiz(this.id)">Ще има толкова много изненади!</button>
+            <button type="button" id="b4q2b" onclick="quiz(this.id)">Не сме очаквали такива изненади.</button>
+            <button type="button" id="b4q2c" onclick="quiz(this.id)">Тези изненади бяха неочаквани.</button>
+            <button type="button" id="b4q2d" onclick="quiz(this.id)">Това беше голяма изненада за нас.</button><br><br>
             <br>
             <strong>3.</strong> Къде е употребено показателно местоимение за количество?<br>
-            а) Купихме много и различни подаръци.<br>
-            б) Взех ябълки, колкото ми поръча баба.<br>
-            в) За плънката се настъргват няколко ябълки.<br>
-            г) Десертът на баба стана толкова хубав!<br>
+            <button type="button" id="b4q3a" onclick="quiz(this.id)">Купихме много и различни подаръци.</button>
+            <button type="button" id="b4q3b" onclick="quiz(this.id)">Взех ябълки, колкото ми поръча баба.</button>
+            <button type="button" id="b4q3c" onclick="quiz(this.id)">За плънката се настъргват няколко ябълки.</button>
+            <button type="button" id="b4q3d" onclick="quiz(this.id)">Десертът на баба стана толкова хубав!</button><br><br>
+            <button type="button" id="b4g" onclick="quizDone(this.id)">Готово</button><br>
+            <div id="b4t" class="gradetext"></div>
           </p>
         </div>
       </div>
@@ -305,21 +317,27 @@
           <h2>Задачи</h2>
           <p>
             <strong>1.</strong> В кое изречение е употребено въпросително местоимение?<br>
-            а) Не знам къде живее новият ученик.<br>
-            б) Знаеш ли колко струва тази книга?<br>
-            в) Влади ми обясни как се решава задачата.<br>
-            г) Разбра ли защо Мария ме е търсила?<br>
+            <button type="button" id="b5q1a" onclick="quiz(this.id)">Не знам къде живее новият ученик.</button>
+            <button type="button" id="b5q1b" onclick="quiz(this.id)">Знаеш ли колко струва тази книга?</button>
+            <button type="button" id="b5q1c" onclick="quiz(this.id)">Влади ми обясни как се решава задачата.</button>
+            <button type="button" id="b5q1d" onclick="quiz(this.id)">Разбра ли защо Мария ме е търсила?</button><br><br>
             <br>
             <strong>2.</strong> В кое изречение е употребено въпросително местоимение за признаци?<br>
-            а) Всички се чудеха колко е пораснал Георги.<br>
-            б) Ще обясъдим какви промени да се направят.<br>
-            в) Вече се знае кой ще е капитанът на отбора.<br>
-            г) Госпожо Петрова, чие съчинение Ви харесва най-много?<br>
+            <button type="button" id="b5q2a" onclick="quiz(this.id)">Всички се чудеха колко е пораснал Георги.</button>
+            <button type="button" id="b5q2b" onclick="quiz(this.id)">Ще обясъдим какви промени да се направят.</button>
+            <button type="button" id="b5q2c" onclick="quiz(this.id)">Вече се знае кой ще е капитанът на отбора.</button>
+            <button type="button" id="b5q2d" onclick="quiz(this.id)">Госпожо Петрова, чие съчинение Ви харесва най-много?</button><br><br>
             <br>
             <strong>3.</strong> Попълнете празните места с кой и кого.<br>
             __ ще поканиш на рождения си ден?<br>
             Не казаха на __ имат предвид.<br>
             Директорът попита __ от нас иска да участва в празника.<br>
+            <button type="button" id="b5q3a" onclick="quiz(this.id)">кого; кого; кой</button>
+            <button type="button" id="b5q3b" onclick="quiz(this.id)">кой; кой; кой</button>
+            <button type="button" id="b5q3c" onclick="quiz(this.id)">кого; кой; кой;</button>
+            <button type="button" id="b5q3d" onclick="quiz(this.id)">кой; кого; кого</button><br><br>
+            <button type="button" id="b5g" onclick="quizDone(this.id)">Готово</button><br>
+            <div id="b5t" class="gradetext"></div>
           </p>
         </div>
       </div>
@@ -378,22 +396,24 @@
           <h2>Задачи</h2>
           <p>
             <strong>1.</strong> С коя сричка се образуват отрицателните местоимения?<br>
-            а) на<br>
-            б) не<br>
-            в) ни<br>
-            г) но<br>
+            <button type="button" id="b6q1a" onclick="quiz(this.id)">на</button>
+            <button type="button" id="b6q1b" onclick="quiz(this.id)">не</button>
+            <button type="button" id="b6q1c" onclick="quiz(this.id)">ни</button>
+            <button type="button" id="b6q1d" onclick="quiz(this.id)">но</button><br><br>
             <br>
             <strong>2.</strong> На кой ред всички думи са отрицателни местоимения?<br>
-            а) никой, всеки, никъде<br>
-            б) нищо, ничий, никой<br>
-            в) никъде, никога, никак<br>
-            г) този, никакъв, тогава<br>
+            <button type="button" id="b6q2a" onclick="quiz(this.id)">никой, всеки, никъде</button>
+            <button type="button" id="b6q2b" onclick="quiz(this.id)">нищо, ничий, никой</button>
+            <button type="button" id="b6q2c" onclick="quiz(this.id)">никъде, никога, никак</button>
+            <button type="button" id="b6q2d" onclick="quiz(this.id)">този, никакъв, тогава</button><br><br>
             <br>
             <strong>3.</strong> В кое от изреченията е употребено отрицателно местоимение?<br>
-            а) Днес нямам никаква спешна работа.<br>
-            б) Тази работа не търпи отлагане.<br>
-            в) Имаш ли някаква спешна работа?<br>
-            г) Винаги възниква спешна работа.<br>
+            <button type="button" id="b6q3a" onclick="quiz(this.id)">Днес нямам никаква спешна работа.</button>
+            <button type="button" id="b6q3b" onclick="quiz(this.id)">Тази работа не търпи отлагане.</button>
+            <button type="button" id="b6q3c" onclick="quiz(this.id)">Имаш ли някаква спешна работа?</button>
+            <button type="button" id="b6q3d" onclick="quiz(this.id)">Винаги възниква спешна работа.</button><br><br>
+            <button type="button" id="b6g" onclick="quizDone(this.id)">Готово</button><br>
+            <div id="b6t" class="gradetext"></div>
           </p>
         </div>
       </div>
