@@ -69,7 +69,7 @@ function quizDone(callerId) {
     // Добавяме текст, съответващ на оценката
     if(grade > 5) gradeText.textContent = "Отлично! ";
     else if (grade > 4) gradeText.textContent = "Браво! ";
-    else gradeText.textContent = "Можеш и по добре! ";
+    else gradeText.textContent = "Можеш и по-добре! ";
     gradeText.textContent += "Оценка: " + grade.toString() + " (" + count.toString() + "/3)"; // Добавяме оценката
     let explanations = document.createElement('p'); // Обяснения на задачите
     let expArr;
