@@ -40,6 +40,19 @@ h2 {
 h3 {
   font-size: 1vw;
 }
+footer { /* Footer - долната част на страницата */
+  background-color: #1a232f;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 1vw;
+}
+footer a {
+  color: #4d73c6;
+}
+footer a:hover {
+  color: #6193ff;
+}
 nav a { /* Линкове в горната част на страницата */
   text-decoration: none;
   color: #ffffff;
