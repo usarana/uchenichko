@@ -35,6 +35,8 @@ function quiz(callerId) {
 }
 // Предаване на тест
 function quizDone(callerId) {
+    document.getElementById(callerId).disabled = true; // Бутон "готово" не се натиска вече
+    document.getElementById(callerId).style.cursor = "default";
     let corr;
     if(callerId.startsWith('m')) corr = answersMath[parseInt(callerId[1])-1]; // Ако тестът е по математика, избираме отговорите за математика
     else corr = answersBulg[parseInt(callerId[1])-1]; // Иначе избираме отговорите за български
