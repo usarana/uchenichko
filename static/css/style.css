@@ -25,7 +25,7 @@ header { /* Горната част на страницата */
   border-radius: 5px;
   transition: color 0.3s ease-in-out;
   font-weight: bold;
-  font-size: 2vw;
+  font-size: 2.5vw;
 }
 .logo a:hover {
   color: #bbbbbb;
@@ -60,7 +60,7 @@ nav a { /* Линкове в горната част на страницата *
   border-radius: 5px;
   transition: color 0.3s ease-in-out;
   font-weight: bold;
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 nav a:hover {
   color: #bbbbbb;
