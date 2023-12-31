@@ -4,7 +4,7 @@ body { /* Страницата */
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #1F2937;
+  background: #1F2937 !important;
   color: #fff;
   font-size: 0.75vw;
   text-align: center;
@@ -14,8 +14,8 @@ header { /* Горната част на страницата */
   justify-content: space-between;
   align-items: center;
   padding: 25px;
-  border-bottom: 0.15vw solid #4b69A8;
-  background: linear-gradient(to right, #1a235e, #3b5998);
+  border-bottom: 0.15vw solid #4b69A8 !important;
+  background: linear-gradient(to right, #1a235e, #3b5998) !important;
   color: #fff;
 }
 .logo a { /* Горе вляво ("лого") */
@@ -41,17 +41,17 @@ h3 {
   font-size: 1vw;
 }
 footer { /* Footer - долната част на страницата */
-  background-color: #1a232f;
+  background-color: #1a232f !important;
   color: #fff;
   padding: 10px;
   text-align: center;
   font-size: 1vw;
 }
 footer a {
-  color: #4d73c6;
+  color: #4d73c6 !important;
 }
 footer a:hover {
-  color: #6193ff;
+  color: #6193ff !important;
 }
 nav a { /* Линкове в горната част на страницата */
   text-decoration: none;
@@ -70,7 +70,7 @@ main { /* Основна част */
 }
 .intro { /* "Добре дошъл" текст */
   margin: 10px 0;
-  background: #2D3E50;
+  background: #2D3E50 !important;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -92,7 +92,7 @@ button { /* Бутоните в задачите след всеки урок */
   margin-top: 20px;
   position: relative;
   text-align: left;
-  background: #2D3E50;
+  background: #2D3E50 !important;
   padding: 20px;
   padding-left: 40px;
   border-radius: 10px;
@@ -102,7 +102,7 @@ button { /* Бутоните в задачите след всеки урок */
   margin-top: 20px;
   position: relative;
   text-align: left;
-  background: #212e3b;
+  background: #212e3b !important;
   padding: 5px;
   padding-left: 40px;
   border-radius: 10px;
