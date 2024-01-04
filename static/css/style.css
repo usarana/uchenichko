@@ -13,10 +13,13 @@ header { /* Горната част на страницата */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px;
+  padding: 17.5px;
   border-bottom: 0.15vw solid #4b69A8;
   background: linear-gradient(to right, #1a235e, #3b5998);
   color: #fff;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
 }
 .logo a { /* Горе вляво ("лого") */
   text-decoration: none;
