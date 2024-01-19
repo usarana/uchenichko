@@ -4,8 +4,8 @@ body { /* Страницата */
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #1F2937;
-  color: #fff;
+  background: #fff;
+  color: #000;
   font-size: 0.75vw;
   text-align: center;
 }
@@ -14,16 +14,16 @@ header { /* Горната част на страницата */
   justify-content: space-between;
   align-items: center;
   padding: 17.5px;
-  border-bottom: 0.15vw solid #4b69A8;
-  background: linear-gradient(to right, #1a235e, #3b5998);
-  color: #fff;
+  border-bottom: 1px solid #E4E7ED;
+  background: #fff;
+  color: #000;
   position: sticky;
   top: 0px;
   z-index: 1;
 }
 .logo a { /* Горе вляво ("лого") */
   text-decoration: none;
-  color: #ffffff;
+  color: #000;
   margin: 0 1vw;
   border-radius: 5px;
   transition: color 0.3s ease-in-out;
@@ -31,7 +31,7 @@ header { /* Горната част на страницата */
   font-size: 2.5vw;
 }
 .logo a:hover {
-  color: #bbbbbb;
+  color: #777;
 }
 /* Размери на текст за съвместимост */
 h1 {
@@ -41,7 +41,7 @@ h2 {
   font-size: 1.5vw;
 }
 h3 {
-  font-size: 1vw;
+  font-size: 1.25vw;
 }
 footer { /* Footer - долната част на страницата */
   background-color: #1a232f;
@@ -58,7 +58,7 @@ footer a:hover {
 }
 nav a { /* Линкове в горната част на страницата */
   text-decoration: none;
-  color: #ffffff;
+  color: #000;
   margin: 0 1vw;
   border-radius: 5px;
   transition: color 0.3s ease-in-out;
@@ -66,22 +66,15 @@ nav a { /* Линкове в горната част на страницата *
   font-size: 1.5vw;
 }
 nav a:hover {
-  color: #bbbbbb;
+  color: #777;
 }
 main { /* Основна част */
-  padding: 20px;
-}
-.intro { /* "Добре дошъл" текст */
-  margin: 10px 0;
-  background: #2D3E50;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 10px;
 }
 button { /* Бутоните в задачите след всеки урок */
-  background-color: #456abb;
+  background-color: #fff;
   border: none;
-  color: white;
+  color: #409DFE;
   padding: 10px 20px;
   text-align: center;
   margin: 5px 5px 5px 5px;
@@ -90,26 +83,51 @@ button { /* Бутоните в задачите след всеки урок */
   border-radius: 10px;
   font-size: 16px;
   cursor: pointer;
+  border: 2px solid #BCD3FF;
 }
 .subject-content { /* Отделна част, "кутия" */
   margin-top: 20px;
   position: relative;
   text-align: left;
-  background: #2D3E50;
+  background: #F9F9FB;
   padding: 20px;
   padding-left: 40px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 24px;
+  border: 1px solid #CFD2D8;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
 }
 .subject-section-title { /* "Кутия" вид 2 */
   margin-top: 20px;
   position: relative;
   text-align: left;
-  background: #212e3b;
+  background: #F9F9FB;
   padding: 5px;
   padding-left: 40px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 24px;
+  border: 1px solid #CFD2D8;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+}
+.lesson-section { /* "Кутия" вид 3 */
+  /* margin-top: 20px; */
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  background: #DDE9FC;
+  margin-bottom: 20px;
+  padding: 1vw;
+  border-radius: 24px;
+  max-width: 20%;
+}
+.lesson-section2 { /* "Кутия" - жълт цвят */
+  /* margin-top: 20px; */
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  background: #FFF4C9;
+  margin-bottom: 20px;
+  padding: 1vw;
+  border-radius: 24px;
+  max-width: 20%;
 }
 main a {
   text-decoration: none;
@@ -133,6 +151,8 @@ p, li, td {
   visibility: hidden;
 }
 table, th, td { /* Таблица */ 
+  width: 35%;
+  margin: auto;
   border: 1px solid lightgray;
   border-collapse: collapse;
 }
