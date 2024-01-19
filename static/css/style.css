@@ -8,6 +8,9 @@ body { /* Страницата */
   color: #000;
   font-size: 0.75vw;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 header { /* Горната част на страницата */
   display: flex;
@@ -44,11 +47,12 @@ h3 {
   font-size: 1.25vw;
 }
 footer { /* Footer - долната част на страницата */
-  background-color: #1a232f;
-  color: #fff;
+  background-color: #f3f3f3;
+  color: #000;
   padding: 10px;
   text-align: center;
   font-size: 1vw;
+  margin-top: auto;
 }
 footer a {
   color: #4d73c6;
@@ -90,18 +94,7 @@ button { /* Бутоните в задачите след всеки урок */
   position: relative;
   text-align: left;
   background: #F9F9FB;
-  padding: 20px;
-  padding-left: 40px;
-  border-radius: 24px;
-  border: 1px solid #CFD2D8;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
-}
-.subject-section-title { /* "Кутия" вид 2 */
-  margin-top: 20px;
-  position: relative;
-  text-align: left;
-  background: #F9F9FB;
-  padding: 5px;
+  padding: 10px;
   padding-left: 40px;
   border-radius: 24px;
   border: 1px solid #CFD2D8;
@@ -118,7 +111,7 @@ button { /* Бутоните в задачите след всеки урок */
   border-radius: 24px;
   max-width: 20%;
 }
-.lesson-section2 { /* "Кутия" - жълт цвят */
+.lesson-section2 { /* "Кутия" 3 - жълт цвят */
   /* margin-top: 20px; */
   position: relative;
   display: inline-block;
@@ -156,6 +149,20 @@ table, th, td { /* Таблица */
   border: 1px solid lightgray;
   border-collapse: collapse;
 }
+.lesson { /* Урок в списъка */
+  max-width: 30%;
+  margin: 0 auto !important; /* За да остане центриран хоризонтално */
+}
+hr {
+  width: 30%;
+  height: 3px;
+  background-color: #F3F3F3;
+  border: none;
+}
+.subject-section { /* Раздел в списъка */
+  max-width: 30%;
+  margin: 0 auto !important; /* За да остане центриран хоризонтално */
+}
 /* Размери за съвместимост с мобилни устройства */
 @media only screen and (max-width: 800px) {
   h1 {
@@ -169,11 +176,11 @@ table, th, td { /* Таблица */
   }
   nav a {
     margin: 0 2vw;
-    font-size: 5vw;
+    font-size: 3.5vw;
   }
   .logo a {
     margin: 0 1vw;
-    font-size: 7vw;
+    font-size: 6vw;
   }
   main {
     padding: 10px;
@@ -182,8 +189,6 @@ table, th, td { /* Таблица */
     width: 250px;
   }
   footer {
-    background-color: #1a232f;
-    color: #fff;
     padding: 10px;
     text-align: center;
     font-size: 3.5vw;

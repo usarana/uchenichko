@@ -22,6 +22,7 @@ function display(subject) {
     }
     // Показване на избрания урок. 
     div.style.visibility = "visible";
+    
     renderMathInElement( // Изобразяване на LaTeX частите от урока, ако има такива
         document.body,
         {
