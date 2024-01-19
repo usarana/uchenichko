@@ -109,7 +109,7 @@ button { /* Бутоните в задачите след всеки урок */
   margin-bottom: 20px;
   padding: 1vw;
   border-radius: 24px;
-  max-width: 20%;
+  max-width: 35%;
 }
 .lesson-section2 { /* "Кутия" 3 - жълт цвят */
   /* margin-top: 20px; */
@@ -120,7 +120,7 @@ button { /* Бутоните в задачите след всеки урок */
   margin-bottom: 20px;
   padding: 1vw;
   border-radius: 24px;
-  max-width: 20%;
+  max-width: 35%;
 }
 main a {
   text-decoration: none;
@@ -166,17 +166,17 @@ hr {
 /* Размери за съвместимост с мобилни устройства */
 @media only screen and (max-width: 800px) {
   h1 {
-    font-size: 4vw;
+    font-size: 5vw;
   }
   h2 {
-    font-size: 3.5vw;
+    font-size: 4.5vw;
   }
   h3 {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
   nav a {
     margin: 0 2vw;
-    font-size: 3.5vw;
+    font-size: 3.7vw;
   }
   .logo a {
     margin: 0 1vw;
@@ -206,7 +206,12 @@ hr {
     border-radius: 8px;
     margin-bottom: 10px;
   }
-  p, li, td {
+  button {
+    padding: 5px;
+    min-width: 30px;
+    font-size: 3vw;
+  }
+  p, li, td, .lesson-section, .lesson-section2 {
     font-size: 3vw;
     line-height: 1.5em;
   }
