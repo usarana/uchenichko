@@ -18,7 +18,9 @@ function markWatched(subject) {
             const watched = document.createElement("p"); // Създаваме елемент "Изгледано"
             watched.innerHTML = "<strong>&check; Изгледано</strong>";
             watched.style.color = "green"; // Зелен цвят
-            document.getElementsByClassName("lesson")[i-1].appendChild(watched); // i-1вия елемент (броенето започва от 0) 
+            let lastLesson = document.getElementsByClassName("lesson")[i-1]; // i-1вия елемент (броенето започва от 0) 
+            if(lastLesson.children.length == 0) lastLesson.appendChild(watched); // Ако няма hr, добавяме го като последен елемент
+            else lastLesson.insertBefore(watched, lastLesson.lastChild); // Иначе добави преди hr
         }
     }
 }

@@ -187,7 +187,7 @@ table, th, td { /* Таблица */
 hr {
   width: 30%;
   height: 3px;
-  background-color: #F3F3F3;
+  background-color: #ececec;
   border: none;
 }
 .subject-section { /* Раздел в списъка */
