@@ -6,7 +6,7 @@ body { /* Страницата */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #fff;
   color: #000;
-  font-size: 0.75vw;
+  font-size: 18px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -31,27 +31,27 @@ header { /* Горната част на страницата */
   border-radius: 5px;
   transition: color 0.3s ease-in-out;
   font-weight: bold;
-  font-size: 2.5vw;
+  font-size: 48px;
 }
 .logo a:hover {
   color: #777;
 }
 /* Размери на текст за съвместимост */
 h1 {
-  font-size: 2vw;
+  font-size: 48px;
 }
 h2 {
-  font-size: 1.5vw;
+  font-size: 36px;
 }
 h3 {
-  font-size: 1.25vw;
+  font-size: 24px;
 }
 footer { /* Footer - долната част на страницата */
   background-color: #f3f3f3;
   color: #000;
   padding: 10px;
   text-align: center;
-  font-size: 1vw;
+  font-size: 24px;
   margin-top: auto;
 }
 footer a {
@@ -67,7 +67,7 @@ nav a { /* Линкове в горната част на страницата *
   border-radius: 5px;
   transition: color 0.3s ease-in-out;
   font-weight: bold;
-  font-size: 1.5vw;
+  font-size: 36px;
 }
 nav a:hover {
   color: #777;
@@ -81,7 +81,7 @@ button { /* Бутоните в задачите след всеки урок */
   color: #409DFE;
   padding: 10px 20px;
   text-align: center;
-  margin: 5px 5px 5px 5px;
+  margin: 2px;
   text-decoration: none;
   display: inline-block;
   border-radius: 10px;
@@ -129,9 +129,8 @@ main a {
 .pointer-cursor:hover { /* Бутоните за уроците да действат като линкове */
   cursor: pointer;
 }
-/* Размери на текст за съвместимост */
 p, li, td {
-  font-size: 1vw;
+  font-size: 20px;
   line-height: 1.3em;
 }
 .content { /* Вътрешната част на кутиите */
@@ -166,21 +165,38 @@ hr {
 /* Размери за съвместимост с мобилни устройства */
 @media only screen and (max-width: 800px) {
   h1 {
-    font-size: 5vw;
+    font-size: 22px;
   }
   h2 {
-    font-size: 4.5vw;
+    font-size: 20px;
   }
   h3 {
-    font-size: 3.5vw;
+    font-size: 16px;
+  }
+  hr {
+    width: 90%;
+  }
+  .lesson {
+    max-width: 90%;
+  }
+  .subject-section {
+    max-width: 90%;
+  }
+  .lesson-section {
+    max-width: 80%;
+    padding: 3vw;
+  }
+  .lesson-section2 {
+    max-width: 80%;
+    padding: 3vw;
   }
   nav a {
     margin: 0 2vw;
-    font-size: 3.7vw;
+    font-size: 18px;
   }
   .logo a {
     margin: 0 1vw;
-    font-size: 6vw;
+    font-size: 28px;
   }
   main {
     padding: 10px;
@@ -191,7 +207,7 @@ hr {
   footer {
     padding: 10px;
     text-align: center;
-    font-size: 3.5vw;
+    font-size: 16px;
   }
   .intro, .subject-content, .subject-section-title {
     width: 90%;
@@ -209,10 +225,9 @@ hr {
   button {
     padding: 5px;
     min-width: 30px;
-    font-size: 3vw;
   }
   p, li, td, .lesson-section, .lesson-section2 {
-    font-size: 3vw;
+    font-size: 12px;
     line-height: 1.5em;
   }
 }  
