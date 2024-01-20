@@ -191,8 +191,8 @@ hr {
     padding: 3vw;
   }
   nav a {
-    margin: 0 2vw;
-    font-size: 18px;
+    margin: 0 1vw;
+    font-size: 16px;
   }
   .logo a {
     margin: 0 1vw;
@@ -224,7 +224,7 @@ hr {
   }
   button {
     padding: 5px;
-    min-width: 30px;
+    min-width: 40px;
   }
   p, li, td, .lesson-section, .lesson-section2 {
     font-size: 12px;
