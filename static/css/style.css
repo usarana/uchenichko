@@ -147,6 +147,7 @@ p, li, td {
 }
 ol {
   list-style-type: none;
+  padding-inline-start: 0;
 }
 .landing-img { /* Снимката на началната страница */
   position: absolute;
