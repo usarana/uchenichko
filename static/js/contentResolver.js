@@ -2,6 +2,16 @@
 
 // Маркираме уроците, които са изгледани
 function markWatched(subject) {
+    window.addEventListener("pageshow", function (event) { // Ако използваме бутон за връщане назад, страницата се 
+                                                           // рефрешва, защото урока няма да се маркира като изгледан
+        var historyTraversal = event.persisted || 
+            (typeof window.performance != "undefined" && 
+            window.performance.getEntriesByType("navigation")[0].type === 2 );
+        
+        if (historyTraversal) {
+            window.location.reload();
+        }
+    });
     let lessonsCnt = document.getElementsByClassName("lesson").length; // Намиране брой уроци
     for(let i = 1; i <= lessonsCnt; i++) {
         if(localStorage.getItem(subject + i.toString()) == 1) { // Ако е маркиран като изгледан
