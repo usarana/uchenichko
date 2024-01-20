@@ -10,7 +10,7 @@ body { /* Страницата */
   text-align: center;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 120vh;
 }
 header { /* Горната част на страницата */
   display: flex;
@@ -77,17 +77,22 @@ main { /* Основна част */
 }
 button { /* Бутоните в задачите след всеки урок */
   background-color: #fff;
-  border: none;
   color: #409DFE;
   padding: 10px 20px;
   text-align: center;
-  margin: 2px;
+  margin: 5px;
   text-decoration: none;
   display: inline-block;
   border-radius: 10px;
   font-size: 16px;
   cursor: pointer;
   border: 2px solid #BCD3FF;
+}
+.landing-button { /* Бутона на началната страница */
+  border: 2px solid #454545;
+  background-color: #fff;
+  color: #000;
+  border-radius: 4rem;
 }
 .subject-content { /* Отделна част, "кутия" */
   margin-top: 20px;
@@ -139,6 +144,27 @@ p, li, td {
 .lesson-img { /* Снимките вътре в уроците */
   width: 400px;
 }
+.landing-img { /* Снимката на началната страница */
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(45%);
+}
+.overlay-container { /* Текста на началната страница */
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  color: #fff; 
+  padding: 10px 20px; 
+  font-size: 72px; 
+  text-align: center;
+  font-size: 0;
+}
 #contentLit, #contentBulg, #contentMat { /* Скрива съдържанието във всеки урок, докато се избере това, което ни трябва, за по-гладко зареждане */
   visibility: hidden;
 }
@@ -162,6 +188,17 @@ hr {
   max-width: 30%;
   margin: 0 auto !important; /* За да остане центриран хоризонтално */
 }
+.overlay-bottom-text { /* Малкия текст на началната страница */
+  margin: 2px;
+  font-weight: normal;
+}
+.nopadding {
+  padding: 0px;
+  margin: 0px;
+}
+.sticktop {
+  top: 0px;
+}
 /* Размери за съвместимост с мобилни устройства */
 @media only screen and (max-width: 800px) {
   h1 {
@@ -175,6 +212,12 @@ hr {
   }
   hr {
     width: 90%;
+  }
+  .landing-button {
+    padding: 10px;
+  }
+  .overlay-top-text { /* Големия текст на началната страница */
+    font-size: 48px;
   }
   .lesson {
     max-width: 90%;
