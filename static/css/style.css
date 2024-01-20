@@ -25,7 +25,6 @@ header { /* Горната част на страницата */
   z-index: 1;
 }
 .logo a { /* Горе вляво ("лого") */
-  text-decoration: none;
   color: #000;
   margin: 0 1vw;
   border-radius: 5px;
@@ -62,7 +61,6 @@ footer a:hover {
   color: #6193ff;
 }
 nav a { /* Линкове в горната част на страницата */
-  text-decoration: none;
   color: #000;
   margin: 0 1vw;
   border-radius: 5px;
@@ -129,7 +127,6 @@ button { /* Бутоните в задачите след всеки урок */
   max-width: 35%;
 }
 main a {
-  text-decoration: none;
   color: #ffffff;
 }
 .pointer-cursor:hover { /* Бутоните за уроците да действат като линкове */
@@ -172,6 +169,9 @@ ol {
 }
 #contentLit, #contentBulg, #contentMat { /* Скрива съдържанието във всеки урок, докато се избере това, което ни трябва, за по-гладко зареждане */
   visibility: hidden;
+}
+a {
+  text-decoration: none;
 }
 table, th, td { /* Таблица */ 
   width: 35%;
