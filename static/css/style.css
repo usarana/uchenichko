@@ -145,6 +145,9 @@ p, li, td {
 .lesson-img { /* Снимките вътре в уроците */
   width: 400px;
 }
+ol {
+  list-style-type: none;
+}
 .landing-img { /* Снимката на началната страница */
   position: absolute;
   top: 100px;
