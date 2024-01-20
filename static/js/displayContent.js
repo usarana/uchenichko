@@ -1,5 +1,11 @@
 // displayContent.js
 
+function findTotalLessons(subject) {
+    for(let i = 1; ; i++) {
+        if(document.getElementById(subject + i.toString())==null) return i-1;
+    }
+}
+
 // Изобразяване на урока
 function display(subject) {
     const queryString = window.location.search;
@@ -8,10 +14,8 @@ function display(subject) {
     const divId = subject + id;
     // Избиране на div-а, в който се съдържат материалите, които ни трябват
     const div = document.getElementById(subject + id);
-    // Намиране на общ брой на уроци
-    let limit = 6;
-    if(subject == 'l') limit = 4;
-    else if(subject == 'm') limit = 8;
+    let limit = findTotalLessons(subject); // Намиране общ брой уроци
+    // console.log(limit);
     if(parseInt(id)>limit) document.getElementById('idErr').style.visibility = "visible";
     // Изтриване на всички други уроци
     for(let i = 1; i <= limit; i++) {
@@ -22,17 +26,19 @@ function display(subject) {
     }
     // Показване на избрания урок. 
     div.style.visibility = "visible";
-    
-    renderMathInElement( // Изобразяване на LaTeX частите от урока, ако има такива
-        document.body,
-        {
-            delimiters: [
-                {left: "$$", right: "$$", display: true},
-                {left: "\\[", right: "\\]", display: true},
-                {left: "$", right: "$", display: false},
-                {left: "\\(", right: "\\)", display: false}
-            ]
-        }
-    );
+    try { // Може и да няма LaTeX елементи, в такъв случай ще даде грешка
+        renderMathInElement( // Изобразяване на LaTeX частите от урока, ако има такива
+            document.body,
+            {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "\\[", right: "\\]", display: true},
+                    {left: "$", right: "$", display: false},
+                    {left: "\\(", right: "\\)", display: false}
+                ]
+            }
+        );
+    }
+    catch {}
     // Готови сме!
 }
