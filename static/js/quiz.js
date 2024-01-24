@@ -28,11 +28,9 @@ const explanationsBulg =
 // Избран отговор от потребителя
 function quiz(callerId) {
     if(answers[parseInt(callerId[3])-1] != "") {
-        document.getElementById(callerId.slice(0, -1)+answers[parseInt(callerId[3])-1]).style.backgroundColor = "#fff";
-        document.getElementById(callerId.slice(0, -1)+answers[parseInt(callerId[3])-1]).style.borderColor = "#BCD3FF";
+        document.getElementById(callerId.slice(0, -1)+answers[parseInt(callerId[3])-1]).style.backgroundColor = "#BCD3FF";
     }
-    document.getElementById(callerId).style.backgroundColor = "#F5F8FF";
-    document.getElementById(callerId).style.borderColor = "#aaa";
+    document.getElementById(callerId).style.backgroundColor = "#a2b6db";
     answers[parseInt(callerId[3])-1] = callerId[4];
 }
 // Предаване на тест
@@ -86,16 +84,19 @@ function quizDone(callerId) {
         if(answers[i]!=corr[i]) explanations.textContent += (i+1).toString() + ". " + expArr[i] + "\r\n";
     }
     if(count < 3) gradeTParent.appendChild(explanations); // Ако не всички отговори са верни, добавяме обясненията като поделемент
-    renderMathInElement( // Отново изобразяване на LaTeX елементи в документа, защото може да има такива в самите обяснения
-        document.body,
-        {
-            delimiters: [
-                {left: "$$", right: "$$", display: true},
-                {left: "\\[", right: "\\]", display: true},
-                {left: "$", right: "$", display: false},
-                {left: "\\(", right: "\\)", display: false}
-            ]
-        }
-    );
+    try { // Може и да няма LaTeX елементи, в такъв случай ще даде грешка
+        renderMathInElement( // Отново изобразяване на LaTeX елементи в документа, защото може да има такива в самите обяснения
+            document.body,
+            {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "\\[", right: "\\]", display: true},
+                    {left: "$", right: "$", display: false},
+                    {left: "\\(", right: "\\)", display: false}
+                ]
+            }
+        );
+    }
+    catch {}
     // Готови сме!
 }

@@ -75,8 +75,8 @@ main { /* Основна част */
   min-height: 100vh;
 }
 button { /* Бутоните в задачите след всеки урок */
-  background-color: #fff;
-  color: #409DFE;
+  background-color: #BCD3FF;
+  color: #000;
   padding: 10px 20px;
   text-align: center;
   margin: 5px;
@@ -85,7 +85,7 @@ button { /* Бутоните в задачите след всеки урок */
   border-radius: 10px;
   font-size: 16px;
   cursor: pointer;
-  border: 2px solid #BCD3FF;
+  border: 0;
 }
 .landing-button { /* Бутона на началната страница */
   border: 2px solid #454545;
@@ -218,6 +218,10 @@ hr {
   }
   hr {
     width: 90%;
+    height: 2px;
+  }
+  li hr {
+    width: 50%;
   }
   .landing-button {
     padding: 10px;
