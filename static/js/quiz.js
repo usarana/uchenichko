@@ -56,11 +56,11 @@ function quizDone(callerId) {
         document.getElementById(lesId+'d').style.cursor = "default";
 
         // Ако не е подаден отговор на въпроса, маркираме правилния и продължаваме
-        if(answers[i-1]=="") {document.getElementById(lesId+corr[i-1]).style.borderColor = "green"; continue;}
+        if(answers[i-1]=="") {document.getElementById(lesId+corr[i-1]).style.backgroundColor = "#A1FF79"; continue;}
 
         // Маркираме избрания и правилния
-        document.getElementById(lesId+answers[i-1]).style.borderColor = "red";
-        document.getElementById(lesId+corr[i-1]).style.borderColor = "green";
+        document.getElementById(lesId+answers[i-1]).style.backgroundColor = "#F47369";
+        document.getElementById(lesId+corr[i-1]).style.backgroundColor = "#A1FF79";
     }
 
     let grade = 2+4*(count/3); // Оценката, пресметната по често срещаната формула.

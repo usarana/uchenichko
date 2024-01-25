@@ -19,7 +19,7 @@ function markWatched(subject) {
             watched.innerHTML = "<strong>&check; Изгледано</strong>";
             watched.style.color = "green"; // Зелен цвят
             let lastLesson = document.getElementsByClassName("lesson")[i-1]; // i-1вия елемент (броенето започва от 0) 
-            if(lastLesson.children.length == 0) lastLesson.appendChild(watched); // Ако няма hr, добавяме го като последен елемент
+            if(lastLesson.children.length == 1) lastLesson.appendChild(watched); // Ако няма hr, добавяме го като последен елемент
             else lastLesson.insertBefore(watched, lastLesson.lastChild); // Иначе добави преди hr
         }
     }
