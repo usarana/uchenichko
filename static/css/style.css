@@ -104,27 +104,19 @@ button { /* Бутоните в задачите след всеки урок */
   border: 1px solid #CFD2D8;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
 }
-.lesson-section { /* "Кутия" вид 3 */
+.lesson-section, .lesson-section2 { /* "Кутия" вид 3 */
   /* margin-top: 20px; */
   position: relative;
   display: inline-block;
   text-align: left;
   background: #DDE9FC;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   padding: 1.5vw;
   border-radius: 24px;
   width: 35%;
 }
 .lesson-section2 { /* "Кутия" 3 - жълт цвят */
-  /* margin-top: 20px; */
-  position: relative;
-  display: inline-block;
-  text-align: left;
   background: #FFF4C9;
-  margin-bottom: 20px;
-  padding: 1.5vw;
-  border-radius: 24px;
-  width: 35%;
 }
 main a {
   color: #ffffff;
@@ -287,5 +279,8 @@ hr {
   p, li, td, .lesson-section, .lesson-section2 {
     font-size: 12px;
     line-height: 1.5em;
+  }
+  .lesson-section, .lesson-section2 {
+    width: 75%;
   }
 }  
