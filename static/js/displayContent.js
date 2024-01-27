@@ -27,7 +27,7 @@ function display(subject) {
     // Показване на избрания урок. 
     div.style.visibility = "visible";
     try { // Може и да няма LaTeX елементи, в такъв случай ще даде грешка
-        renderMathInElement( // Изобразяване на LaTeX частите от урока, ако има такива
+        renderMathInElement( // Изобразяване на LaTeX частите от страницата, ако има такива
             document.body,
             {
                 delimiters: [
