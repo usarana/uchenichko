@@ -23,6 +23,20 @@ function markWatched(subject) {
             else lastLesson.insertBefore(watched, lastLesson.lastChild); // Иначе добави преди hr
         }
     }
+    try {
+        renderMathInElement( // Изобразяване на LaTeX частите от урока, ако има такива
+            document.body,
+            {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "\\[", right: "\\]", display: true},
+                    {left: "$", right: "$", display: false},
+                    {left: "\\(", right: "\\)", display: false}
+                ]
+            }
+        );
+    }
+    catch {}
 }
 
 // Зарежда страницата с избрания урок и предава id-то му като аргумент.

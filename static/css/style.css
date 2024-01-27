@@ -138,6 +138,10 @@ ol {
   list-style-type: none;
   padding-inline-start: 0;
 }
+.lesson-section ol, .lesson-section2 ol {
+  list-style-type: decimal;
+  padding-inline-start:20px;
+}
 .landing-img { /* Снимката на началната страница */
   position: absolute;
   top: 100px;
