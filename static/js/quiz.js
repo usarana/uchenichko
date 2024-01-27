@@ -106,7 +106,7 @@ function quizDone(callerId) {
     grade = (Math.round(grade * 100) / 100).toFixed(2); // Закръгляме оценката до 2 точки след десетичната запетая
     // Добавяме текст, съответващ на оценката
     if(grade > 5) gradeText.textContent = "Отлично! ";
-    else if (grade > 4) gradeText.textContent = "Браво! ";
+    else if (grade > 3) gradeText.textContent = "Браво! ";
     else gradeText.textContent = "Можеш и по-добре! ";
     gradeText.textContent += "Оценка: " + grade.toString() + " (" + count.toString() + "/3)"; // Добавяме оценката
     let explanations = document.createElement('p'); // Обяснения на задачите
