@@ -65,7 +65,6 @@ function findNums(str) {
 function quiz(callerId) {
     // callerId е от сорта на m11q2a
     let numsCallerId = findNums(callerId);
-    console.log(numsCallerId)
     if(answers[parseInt(numsCallerId[1])-1] != "") {
         document.getElementById(callerId.slice(0, -1)+answers[parseInt(numsCallerId[1])-1]).style.backgroundColor = "#BCD3FF";
     }
@@ -115,7 +114,6 @@ function quizDone(callerId) {
     gradeText.textContent += "Оценка: " + grade.toString() + " (" + count.toString() + "/3)"; // Добавяме оценката
     let explanations = document.createElement('p'); // Обяснения на задачите
     let expArr;
-    console.log(parseInt(numsCallerId[0])-1);
     if(callerId.startsWith('m')) expArr = explanationsMath[parseInt(numsCallerId[0])-1]; // Отново избираме правилните
     else expArr = explanationsBulg[parseInt(numsCallerId[0])-1];
     explanations.setAttribute('style', 'white-space: pre;'); // Това е нужно, за да работи правилно \r\n в полето textContent
