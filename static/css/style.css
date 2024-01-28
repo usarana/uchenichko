@@ -134,6 +134,12 @@ p, li, td {
 .lesson-img { /* Снимките вътре в уроците */
   width: 400px;
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 ol {
   list-style-type: none;
   padding-inline-start: 0;
