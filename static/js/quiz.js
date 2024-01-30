@@ -74,7 +74,7 @@ function quiz(callerId) {
     if(answers[parseInt(numsCallerId[1])-1] != "") {
         document.getElementById(callerId.slice(0, -1)+answers[parseInt(numsCallerId[1])-1]).style.backgroundColor = "#BCD3FF";
     }
-    document.getElementById(callerId).style.backgroundColor = "#a2b6db";
+    document.getElementById(callerId).style.backgroundColor = "#7996cb";
     answers[parseInt(numsCallerId[1])-1] = callerId[callerId.length-1];
 }
 // Предаване на тест
