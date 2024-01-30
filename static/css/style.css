@@ -194,6 +194,7 @@ hr {
   height: 3px;
   background-color: #ececec;
   border: none;
+  appearance: none;
 }
 .subject-section { /* Раздел в списъка */
   max-width: 30%;
