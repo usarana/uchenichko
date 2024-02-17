@@ -72,8 +72,8 @@ function quiz(callerId) {
     // callerId е от сорта на m11q2a
     let numsCallerId = findNums(callerId);
     let currAns = answers[parseInt(numsCallerId[1])-1];
+    // Ако иамме отговор на даден въпрос
     if(typeof currAns !== 'undefined' && answers[parseInt(numsCallerId[1])-1] != "") {
-        console.log(parseInt(numsCallerId[1])-1);
         document.getElementById(callerId.slice(0, -1)+answers[parseInt(numsCallerId[1])-1]).style.backgroundColor = "#BCD3FF";
     }
     document.getElementById(callerId).style.backgroundColor = "#7996cb";
@@ -87,7 +87,6 @@ function quizDone(callerId) {
     let numsCallerId = findNums(callerId);
     if(callerId.startsWith('m')) corr = answersMath[parseInt(numsCallerId[0])-1]; // Ако тестът е по математика, избираме отговорите за математика
     else corr = answersBulg[parseInt(numsCallerId[0])-1]; // Иначе избираме отговорите за български
-
     let total = 0;
     for(total++; document.getElementById(callerId.slice(0, -1) + 'q' + total.toString() + 'a') !== null; total++);
     total--;

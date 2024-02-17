@@ -135,13 +135,13 @@ p, li, td {
 .lesson-img { /* Снимките вътре в уроците */
   width: 400px;
 }
-.center {
+.center { /* Центриран елемент */
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
-ol {
+ol { /* Списък на уроците */
   list-style-type: none;
   padding-inline-start: 0;
 }
@@ -190,7 +190,7 @@ table, th, td { /* Таблица */
 .lesson-txt {
   margin: 15px;
 }
-hr {
+hr { /* Хоризонтална черта */
   width: 30%;
   height: 3px;
   background-color: #ececec;

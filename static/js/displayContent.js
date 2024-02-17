@@ -1,5 +1,6 @@
 // displayContent.js
 
+// Намиране на общ брой уроци
 function findTotalLessons(subject) {
     let total = 0;
     for(total++; document.getElementById(subject + total.toString()) !== null; total++);
@@ -8,6 +9,7 @@ function findTotalLessons(subject) {
 
 // Изобразяване на урока
 function display(subject) {
+    // Параметри
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const id = urlParams.get('id');
