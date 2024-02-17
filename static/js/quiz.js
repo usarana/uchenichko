@@ -182,6 +182,7 @@ const explanationsBulg =
         'Казано в урока'
     ]
 ]
+
 // Помощна функция; намира числа в низ
 function findNums(str) {
     const regex = /\d+/g;
@@ -192,12 +193,13 @@ function findNums(str) {
     }
     return nums;
 }
+
 // Избран отговор от потребителя
 function quiz(callerId) {
     // callerId е от сорта на m11q2a
     let numsCallerId = findNums(callerId);
     let currAns = answers[parseInt(numsCallerId[1])-1];
-    // Ако иамме отговор на даден въпрос
+    // Ако имаме отговор на даден въпрос
     if(typeof currAns !== 'undefined' && answers[parseInt(numsCallerId[1])-1] != "") {
         document.getElementById(callerId.slice(0, -1)+answers[parseInt(numsCallerId[1])-1]).style.backgroundColor = "#BCD3FF";
     }
@@ -208,16 +210,20 @@ function quiz(callerId) {
 function quizDone(callerId) {
     // Маркиране на урока като взет
     localStorage.setItem(callerId.slice(0, -1), 1);
+
     document.getElementById(callerId).disabled = true; // Бутон "готово" не се натиска вече
     document.getElementById(callerId).style.cursor = "default";
+
     let corr;
     let numsCallerId = findNums(callerId);
     if(callerId.startsWith('m')) corr = answersMath[parseInt(numsCallerId[0])-1]; // Ако тестът е по математика, избираме отговорите за математика
     else corr = answersBulg[parseInt(numsCallerId[0])-1]; // Иначе избираме отговорите за български
+
     let total = 0;
     for(total++; document.getElementById(callerId.slice(0, -1) + 'q' + total.toString() + 'a') !== null; total++);
     total--;
     // console.log(total);
+
     let count = 0;
     for(let i = 0; i < total; i++) if(answers[i]==corr[i]) count++; // Броим верните отговори
     for(let i = 1; i <= total; i++) {
@@ -246,11 +252,13 @@ function quizDone(callerId) {
     let gradeText = document.createElement('h2'); // Създаваме елемента за текста
     gradeTParent.appendChild(gradeText); // Добавяме го като поделемент
     grade = (Math.round(grade * 100) / 100).toFixed(2); // Закръгляме оценката до 2 точки след десетичната запетая
+
     // Добавяме текст, съответващ на оценката
     if(grade > 5) gradeText.textContent = "Отлично! ";
     else if (grade > 4) gradeText.textContent = "Браво! ";
     else gradeText.textContent = "Можеш и по-добре! ";
     gradeText.textContent += "Оценка: " + grade.toString() + " (" + count.toString() + "/"+total.toString()+")"; // Добавяме оценката
+
     let explanations = document.createElement('p'); // Обяснения на задачите
     let expArr;
     if(callerId.startsWith('m')) expArr = explanationsMath[parseInt(numsCallerId[0])-1]; // Отново избираме правилните
@@ -262,6 +270,7 @@ function quizDone(callerId) {
         if(answers[i]!=corr[i]) explanations.innerHTML += "<strong>" + (i+1).toString() + "</strong>. " + expArr[i] + "\r\n<br>";
     }
     if(count < total) gradeTParent.appendChild(explanations); // Ако не всички отговори са верни, добавяме обясненията като поделемент
+    
     try { // Може и да няма LaTeX елементи, в такъв случай ще даде грешка
         renderMathInElement( // Отново изобразяване на LaTeX елементи в документа, защото може да има такива в самите обяснения
             document.body,
