@@ -42,7 +42,6 @@ function markWatched(subject) {
 
 // Зарежда страницата с избрания урок и предава id-то му като аргумент.
 function resolve(contentId) {
-    localStorage.setItem(contentId, 1); // Маркираме, че видеоурока е изгледан
     let loc = "content/";
     // Страницата по съответния клиент
     if(contentId.startsWith('m')) loc += 'math.html';

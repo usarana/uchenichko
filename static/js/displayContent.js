@@ -30,7 +30,6 @@ function shuffle(p) {
         const shuffled = shuffleArray(elements);
         let currentIndex = 0;
         elements.forEach((elem) => {
-            console.log(shuffled[currentIndex]);
             $(elem).replaceWith($(shuffled[currentIndex]).get(0).outerHTML);
             currentIndex++;
         })
