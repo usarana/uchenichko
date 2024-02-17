@@ -27,6 +27,7 @@ function markWatched(subject) {
         renderMathInElement( // Изобразяване на LaTeX частите от урока, ако има такива
             document.body,
             {
+                strict: false,
                 delimiters: [
                     {left: "$$", right: "$$", display: true},
                     {left: "\\[", right: "\\]", display: true},

@@ -52,6 +52,7 @@ footer { /* Footer - долната част на страницата */
   text-align: center;
   font-size: 22px;
   margin-top: auto;
+  display: none;
 }
 footer a {
   color: #4d73c6;
@@ -71,6 +72,7 @@ nav a:hover {
   color: #777;
 }
 main { /* Основна част */
+  display: none;
   padding: 10px;
   min-height: 100vh;
 }

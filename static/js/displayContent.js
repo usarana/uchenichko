@@ -1,9 +1,9 @@
 // displayContent.js
 
 function findTotalLessons(subject) {
-    for(let i = 1; ; i++) {
-        if(document.getElementById(subject + i.toString())==null) return i-1;
-    }
+    let total = 0;
+    for(total++; document.getElementById(subject + total.toString()) !== null; total++);
+    return --total;
 }
 
 // Изобразяване на урока
@@ -30,6 +30,7 @@ function display(subject) {
         renderMathInElement( // Изобразяване на LaTeX частите от страницата, ако има такива
             document.body,
             {
+                strict: false,
                 delimiters: [
                     {left: "$$", right: "$$", display: true},
                     {left: "\\[", right: "\\]", display: true},
