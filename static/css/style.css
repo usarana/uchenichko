@@ -11,6 +11,7 @@ body { /* Страницата */
   display: flex;
   flex-direction: column;
 }
+
 header { /* Горната част на страницата */
   display: flex;
   justify-content: space-between;
@@ -34,6 +35,7 @@ header { /* Горната част на страницата */
 .logo a:hover {
   color: #777;
 }
+
 /* Размери на текст за съвместимост */
 h1 {
   font-size: 36px;
@@ -45,6 +47,7 @@ h3 {
   font-size: 24px;
   font-weight: normal;
 }
+
 footer { /* Footer - долната част на страницата */
   background-color: #f3f3f3;
   color: #000;
@@ -60,6 +63,7 @@ footer a {
 footer a:hover {
   color: #6193ff;
 }
+
 nav a { /* Линкове в горната част на страницата */
   color: #000;
   margin: 0 1vw;
@@ -71,11 +75,13 @@ nav a { /* Линкове в горната част на страницата *
 nav a:hover {
   color: #777;
 }
+
 main { /* Основна част */
   display: none;
   padding: 10px;
   min-height: 100vh;
 }
+
 button { /* Бутоните в задачите след всеки урок */
   background-color: #BCD3FF;
   color: #000;
@@ -89,11 +95,13 @@ button { /* Бутоните в задачите след всеки урок */
   cursor: pointer;
   border: 0;
 }
+
 .landing-button { /* Бутона на началната страница */
   background-color: #fff;
   color: #000;
   border-radius: 4rem;
 }
+
 .subject-content { /* Отделна част, "кутия" */
   margin-top: 20px;
   position: relative;
@@ -119,28 +127,35 @@ button { /* Бутоните в задачите след всеки урок */
 .lesson-section2 { /* "Кутия" 3 - жълт цвят */
   background: #FFF4C9;
 }
+
 main a {
   color: #ffffff;
 }
+
 .pointer-cursor:hover { /* Бутоните за уроците да действат като линкове */
   cursor: pointer;
 }
+
 p, li, td {
   font-size: 20px;
   line-height: 1.3em;
 }
+
 .content { /* Вътрешната част на кутиите */
   margin-top: 20px;
 }
+
 .lesson-img { /* Снимките вътре в уроците */
   width: 400px;
 }
+
 .center { /* Центриран елемент */
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
+
 ol { /* Списък на уроците */
   list-style-type: none;
   padding-inline-start: 0;
@@ -149,6 +164,7 @@ ol { /* Списък на уроците */
   list-style-type: decimal;
   padding-inline-start:20px;
 }
+
 .landing-img { /* Снимката на началната страница */
   position: absolute;
   top: 100px;
@@ -170,9 +186,11 @@ ol { /* Списък на уроците */
   text-align: center;
   font-size: 0;
 }
+
 #contentLit, #contentBulg, #contentMat { /* Скрива съдържанието във всеки урок, докато се избере това, което ни трябва, за по-гладко зареждане */
   visibility: hidden;
 }
+
 a {
   text-decoration: none;
 }
@@ -190,6 +208,7 @@ table, th, td { /* Таблица */
 .lesson-txt {
   margin: 15px;
 }
+
 hr { /* Хоризонтална черта */
   width: 30%;
   height: 3px;
@@ -197,6 +216,7 @@ hr { /* Хоризонтална черта */
   border: none;
   appearance: none;
 }
+
 .subject-section { /* Раздел в списъка */
   max-width: 30%;
   margin: 0 auto !important; /* За да остане центриран хоризонтално */
@@ -205,6 +225,7 @@ hr { /* Хоризонтална черта */
   margin: 2px;
   font-weight: normal;
 }
+
 .nopadding {
   padding: 0px;
   margin: 0px;
@@ -212,6 +233,7 @@ hr { /* Хоризонтална черта */
 .sticktop {
   top: 0px;
 }
+
 /* Размери за съвместимост с мобилни устройства */
 @media only screen and (max-height: 600px) {
   nav a {
@@ -231,6 +253,7 @@ hr { /* Хоризонтална черта */
     font-size: 14px;
   }
 }
+
 @media only screen and (max-width: 800px) {
   body {
     font-size: 14px;
