@@ -90,7 +90,6 @@ button { /* Бутоните в задачите след всеки урок */
   border: 0;
 }
 .landing-button { /* Бутона на началната страница */
-  border: 2px solid #454545;
   background-color: #fff;
   color: #000;
   border-radius: 4rem;
